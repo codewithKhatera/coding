@@ -1,0 +1,90 @@
+<!-- Write HTML for the main form here -->
+<!doctype html>
+<html lang="en">
+    <head>
+       <title>assignment#06</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+       <div id="form">
+        <h1> 🍕 Pizza Order Form</h1>
+        <p> Please submit this form to order delicious pizza.</p>
+
+        <form action="thankyou.html" method="get">
+
+        <div>
+            <label for="full-name">Name: </label>
+            <input id="full-name" type="text"
+            placeholder="Khatera Noori" name="full-name" required minlength="3">
+        </div>
+
+        <div>
+            <label for="email-address">Email Address:</label>
+            <input id="email-address" type="email" placeholder="khateranoori@gmail.com" name="email-address" required>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password" required>
+        </div>
+
+        <div>
+            <label for="quantity">How many pizzas would you like to order?</label>
+            <input id="quantity" type="number" max="20" min="1" name= "quantity">
+        </div>
+
+        <div>
+            <label for="city">What city do you live in?</label>
+            <select id="city" name="city">
+                <option value="kabul">Kabul</option>
+                <option  value="herat">Herat</option>
+                <option  value="azar-e-sharif">Mazar-e-Sharif</option>
+                <option value="farah">Farah</option>   
+            </select>
+        </div>
+
+        <div>
+            <label>Please select your preferred type of pizza:</label>
+
+            <input id="Pepperoni" type="radio" name="pizza-type" value="Pepperoni">
+            <label class="inline-label"
+             for="Pepperoni">Pepperoni</label>
+
+            <input id="Vegetarian" type="radio" name="pizza-type" value="Vegetarian">
+            <label class="inline-label" for="Vegetarian">Vegetarian</label>
+
+            <input id="Chicken" type="radio" name="pizza-type" value="Chicken">
+            <label class="inline-label" for="Chicken">Chicken</label>
+
+            <input id="Four-Seasons" type="radio" name="pizza-type" value="Four-Seasons">
+            <label class="inline-label" for="Four-Seasons">Four Seasons</label>
+        </div>
+
+        <div>
+            <label>Please select your favorite pizza toppings( you can choose more than one):</label>
+            <input id="Extra-Cheese" type="checkbox" name="pizza-toppings" value="Extra-Cheese">
+            <label class="inline-label" for="Extra-Cheese">Extra Cheese</label>
+
+            <input id="Olives" type="checkbox" name="pizza-toppings" value="Olives">
+            <label class="inline-label" for="Olives">Olives</label>
+
+            <input id="Mushrooms" type="checkbox" name="pizza-toppings" value="Mushrooms">
+            <label class="inline-label" for="Mushrooms">Mushrooms</label>
+
+            <input id="Peppers" type="checkbox" name="pizza-toppings" value="Peppers">
+            <label class="inline-label" for="Peppers">Peppers</label>
+        </div>
+
+        <div>
+            <label for="comments">Aditional comment in your order:</label>
+            <textarea id="comments" name="comments"></textarea>
+        </div>
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+        </form>
+       </div>
+       <footer id="footer">
+        <p>made by Khatera Noori</p>
+        </footer>
+    </body>
+</html>

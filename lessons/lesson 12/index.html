@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This meta tag enforces a set of characters we can use (contains alphabet, numbers, symbols, other languages, etc) -->
+    <meta charset="UTF-8">
+    <!-- This is useful for responsive websites, but we will talk more about this in future. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>The Hollywood Reporter</h1>
+    </header>
+    <nav>
+        <!-- # is a placeholder for links. we don't know where the link will go so # is fine. -->
+        <a href="#">News</a>
+        <a href="#">Film</a>
+        <a href="#">TV</a>
+        <a href="#">Awards</a>
+        <a href="#">Lifestyle</a>
+    </nav>
+    <!-- <main> will contain the main content. The article, the headline, the sidebar, etc. -->
+    <main>
+        <div class="breadcrumbs">
+            <a href="#">Home</a> >
+            <a href="#">Movies</a> >
+            <a href="#">Movie News</a>
+        </div>
+        <!-- The main headline of the page -->
+        <h2>"Moana 2" Scores Record First-Day Advance Ticket Sales</h2>
+        <!-- The secondary headline of the page -->
+        <h3>The Disney animation hits theaters over Thanksgiving and has alread been dubbed 'Moanapocalypse' by box office pundits.</h3>
+        <!-- You can use a <div> when there is no semantic tag like <nav> or <main> etc for a "box" -->
+        <div class="byline">
+            <p>By Pamela McClintock</p>
+            <p>October 29, 2024</p>
+        </div>
+        <!-- At this point, there is going to be a split between two sides. Left side is main article, Right side is a sidebar. So we need a flexbox!! Flexbox requires a PARENT element. so we create article-container -->
+        <div class="article-container">
+            <!-- This div will contain the left side of the article -->
+            <div class="article">
+                <img src="https://www.hollywoodreporter.com/wp-content/uploads/2024/05/MOANA2-ONLINE-USE-trailer1_016.50_0004_2k-copy.jpg" alt="Moana"/>
+
+                <p>Strong winds are benefiting Moana 2 as it sails into shore.</p>
+                <p>The Walt Disney Animation Studios tentpole set records Monday in terms of first-day advance ticket sales, according to online retailer Fandango.</p>
+                <p>It sold more tickets than any other 2024 animated film, including fellow Disney/Pixar summer 2024 blockbuster Inside Out 2. It’s also the fourth-best showing of the year for any movie behind Deadpool & Wolverine, Wicked and Dune: Part 2. (It’s no wonder why box office observers have bequeathed the sequel with its own special moniker: “Moanapocalpyse.”)</p>
+                <p>The event pic hits theaters Nov. 27, the Wednesday before Thanksgiving, and five days after Paramount’s Gladiator II and Universal’s Wicked open in North America. Theater owners are counting on the trio of highly anticipated tentpoles to shore up ticket sales after a tough start to the third quarter.</p>
+                <p>David Derrick Jr., Jason Hand and Dana Ledoux Miller directed the animated feature, which reunites voice stars Auli’i Cravalho and Dwayne Johnson. The story follows Moana as she embarks on an unexpected adventure in long-lost waters after receiving a call from her ancestors. Johnson reprises his role as demigod Maui.</p>
+                <p>As a testament to Moana’s enduring popularity, the original film, which came out in 2016 and grossed north of $687 million globally, was the most streamed movie across all platforms in 2023, per Nielsen.</p>
+                <p>Moana 2 was originally developed as a television series before being reworked as a theatrical sequel. Featuring new songs from Abigail Barlow and Emily Bear, Moana 2 counts Christina Chen and Yvett Merino as producers.</p>
+                <p>A trailer for the movie released in late May was viewed by 178 million people in its first 24 hours, more than any other trailer for a film in the history of Disney’s animated empire, which is made up of Walt Disney Animation Studios and Pixar. (Moana is from Disney Animation.)</p>
+                <p>Disney and Johnson are also behind the live-action Moana remake from director Thomas Kail that’s set to open in theaters on July 10, 2026.</p>
+            </div>
+
+            <!-- This div will contain the right side of the article -->
+            <div class="sidebar">
+                <h3>Most Popular Articles</h3>
+                <ul>
+                    <li>
+                        <a href="#">Howard's End? How Siriux XM Will Survive After Stern</a>
+                    </li>
+                    <li>
+                        <a href="#">Howard's End? How Siriux XM Will Survive After Stern</a>
+                    </li>
+                    <li>
+                        <a href="#">Howard's End? How Siriux XM Will Survive After Stern</a>
+                    </li>
+                </ul>
+                <div>
+
+                    <h3>Shopping with THR</h3>
+                    <div class="shopping-row"></div>
+                    <div>
+                        <img src="data:image/jpeg;base64,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"/>
+                    </div>
+                    <div>
+                        <h4>khatera noori</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Code written by Nayeon Kim.
+    </footer>
+</body>
+</html>

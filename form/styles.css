@@ -1,0 +1,52 @@
+<style>
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrh91kIICSU9vlvK5-y4TBmkcn2b2di3Kgkg&s');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        div {
+              margin-bottom: 8px;
+              display: block;
+                }
+        #form {
+            background-color: #72BB72;
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            display: center;
+               
+        }
+        #footer{
+            background-color: lightgreen;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            width: 600px;
+         }
+        label {
+            display: block;
+         }
+         .inline-label {
+         display: inline;
+         }
+         input[type="text"] {
+            width: 97%;
+            height: 35px;
+            }
+        input[type="email"] {
+            width: 97%;
+            height: 35px;
+            }
+        input[type="password"] {
+            width: 97%;
+            height: 35px;
+            }
+        input[type="number"] {
+            width: 97%;
+            height: 35px;
+            margin-bottom: 8px;
+            border: 1px;
+            }
+</style>
